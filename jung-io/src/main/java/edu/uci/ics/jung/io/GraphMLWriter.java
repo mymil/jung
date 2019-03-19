@@ -68,9 +68,9 @@ public class GraphMLWriter<N, E> {
     // write out boilerplate header
     bw.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
     bw.write(
-        "<graphml xmlns=\"http://graphml.graphdrawing.org/xmlns/graphml\"\n"
+        "<graphml xmlns=\"http://graphml.graphdrawing.org/xmlns\"\n"
             + "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"  \n");
-    bw.write("xsi:schemaLocation=\"http://graphml.graphdrawing.org/xmlns/graphml\">\n");
+    bw.write("xsi:schemaLocation=\"http://graphml.graphdrawing.org/xmlns\">\n");
 
     // write out data specifiers, including defaults
     for (String key : graph_data.keySet()) {
